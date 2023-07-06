@@ -21,7 +21,7 @@ const login = (req, res, next) => {
             throw new UnauthorizedError('Передан неверный логин или пароль');
           }
           return res.send({
-            token: jwt.sign({ _id: user._id }, 'some-secret-key', { expiresIn: '7d' }),
+            token: jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' }),
           });
         })
         .catch((err) => next(err));
