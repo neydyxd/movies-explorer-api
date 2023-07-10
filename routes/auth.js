@@ -9,4 +9,4 @@ const {
 router.post('/signup', signUpValidator, createUser);
 router.post('/signin', signInValidator, login);
 
-module.exports = router; 
+module.exports = router;

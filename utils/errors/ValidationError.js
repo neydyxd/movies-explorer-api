@@ -7,4 +7,4 @@ class ValidationError extends Error {
   }
 }
 
-module.exports = new ValidationError('Ошибка валидации. Преданы некорректные данные!');
+module.exports = ValidationError;

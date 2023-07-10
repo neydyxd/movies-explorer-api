@@ -10,7 +10,7 @@ const getMovies = (req, res, next) => {
     .catch((err) => next(err));
 };
 
-const createMovie = (req, res, next) => {
+const createMovie = (req, res) => {
   const owner = req.user._id;
   const {
     country,
@@ -70,7 +70,7 @@ const deleteMovie = (req, res, next) => {
 };
 
 module.exports = {
-    getMovies,
-    createMovie,
-    deleteMovie,
-}
+  getMovies,
+  createMovie,
+  deleteMovie,
+};

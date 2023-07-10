@@ -48,8 +48,8 @@ const updateUserInfo = (req, res, next) => {
     .catch((err) => next(err));
 };
 
-module.exports ={
-    createUser,
-    getUserInfo,
-    updateUserInfo,
-}
+module.exports = {
+  createUser,
+  getUserInfo,
+  updateUserInfo,
+};

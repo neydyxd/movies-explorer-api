@@ -1,6 +1,5 @@
 const { celebrate, Joi } = require('celebrate');
-const { regexHttp} = require('../utils/constants');
-
+const { regexHttp } = require('../utils/constants');
 
 const signUpValidator = celebrate({
   body: Joi.object().keys({
@@ -47,9 +46,9 @@ const updateUserInfoValidator = celebrate({
 });
 
 module.exports = {
-    signUpValidator,
-    signInValidator,
-    updateUserInfoValidator,
-    createMovieValidator,
-    deleteMovieValidator,
-}
+  signUpValidator,
+  signInValidator,
+  updateUserInfoValidator,
+  createMovieValidator,
+  deleteMovieValidator,
+};
