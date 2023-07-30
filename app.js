@@ -12,7 +12,7 @@ const NotFound = require('./utils/errors/NotFoundError');
 
 mongoose.connect(DB_ADDRESS);
 const app = express();
-app.use(helmet);
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
